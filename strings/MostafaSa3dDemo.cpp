@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
     cin >> t;
     while (t--)
     {
-        int resChars[32] = {0};
+        int resChars[26] = {0};
 
         string str;
         cin >> str;
@@ -16,15 +16,15 @@ int main(int argc, char const *argv[])
         {
             if ('a' <= str[i] && str[i] <= 'z')
             {
-                resChars[str[i] - 32]++;
+                resChars[str[i] - 97]++;
             }
         }
 
-        for (int i = 0; i < 32; i++)
+        for (int i = 0; i < 26; i++)
         {
             if (resChars[i] != 0)
             {
-                cout << char(i + 32) << " " << resChars[i] << endl;
+                cout << char(i + 97) << " " << resChars[i] << endl;
             }
         }
     }
