@@ -7,6 +7,7 @@ int main(int argc, char const *argv[])
     cin >> t;
     while (t--)
     {
+        // this is for using the array as a hash table to store the frequency of each character
         int resChars[26] = {0};
 
         string str;
